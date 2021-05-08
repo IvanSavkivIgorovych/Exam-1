@@ -1,0 +1,22 @@
+$xl: 1399.98px;
+$lg: 1199.98px;
+$md: 991.98px;
+$sm: 767.98px;
+$xs: 575.98px;
+@media screen and (max-width: $xl) {
+  .steps {
+    background-size: 60%;
+  }
+}
+
+@media screen and (max-width: $md) {
+}
+
+@media screen and (max-width: $sm) {
+}
+
+@media screen and (max-width: $xs) {
+}
+
+@media screen and (min-width: 768px) {
+}

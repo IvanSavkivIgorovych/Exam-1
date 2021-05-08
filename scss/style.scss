@@ -80,7 +80,7 @@ $blue: #5373fd;
   text-transform: uppercase;
   color: $white;
   padding: 20px 32px;
-  background: $blue;
+  background: url(../img/ButtonBG.png) no-repeat left center, $blue;
   border: 1px solid transparent;
   cursor: pointer;
   &:hover {
@@ -377,6 +377,12 @@ body {
   body .container &__wrapper {
     background-color: #333333;
     padding: 48px 60px;
+    .icon-quote-left {
+      display: inline-block;
+      font-size: 20px;
+      color: $blue;
+      vertical-align: super;
+    }
   }
 }
 .footer {
@@ -414,3 +420,4 @@ body {
     }
   }
 }
+@import "adaptive";

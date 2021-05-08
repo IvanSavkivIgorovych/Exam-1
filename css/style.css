@@ -281,7 +281,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   padding: 20px 32px;
-  background: #5373fd;
+  background: url(../img/ButtonBG.png) no-repeat left center, #5373fd;
   border: 1px solid transparent;
   cursor: pointer;
 }
@@ -425,7 +425,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   padding: 20px 32px;
-  background: #5373fd;
+  background: url(../img/ButtonBG.png) no-repeat left center, #5373fd;
   border: 1px solid transparent;
   cursor: pointer;
 }
@@ -485,6 +485,13 @@ body .container .feedback__wrapper {
   padding: 48px 60px;
 }
 
+body .container .feedback__wrapper .icon-quote-left {
+  display: inline-block;
+  font-size: 20px;
+  color: #5373fd;
+  vertical-align: super;
+}
+
 .footer {
   text-align: center;
   background-color: #000;
@@ -525,5 +532,11 @@ body .container .feedback__wrapper {
 
 .footer i:not(:last-child) {
   margin-right: 32px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .steps {
+    background-size: 60%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
