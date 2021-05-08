@@ -361,4 +361,78 @@ body {
 .steps .icon-thumbs-up:hover {
   color: #005180;
 }
+
+.spain {
+  font-family: "Josefin Sans", sans-serif;
+  padding: 220px 0 120px;
+}
+
+.spain--left {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/BG3.jpg);
+}
+
+.spain--right {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/spain.jpg);
+}
+
+.spain--right .row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.spain .body__wrapper {
+  background: rgba(35, 35, 35, 0.9);
+  padding: 44px 32px;
+}
+
+.spain__subheader, .spain__header {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.spain__subheader {
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+.spain__header {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.spain__info {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+
+.spain__button {
+  min-width: 213px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 20px 32px;
+  background: #5373fd;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.spain__button:hover {
+  background: #fff;
+  color: #5373fd;
+  border-color: #5373fd;
+}
 /*# sourceMappingURL=style.css.map */

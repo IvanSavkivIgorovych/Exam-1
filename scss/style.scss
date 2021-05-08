@@ -299,3 +299,46 @@ body {
     }
   }
 }
+.spain {
+  font-family: $josefin;
+  padding: 220px 0 120px;
+  &--left {
+    @include back();
+    background-image: url(../img/BG3.jpg);
+  }
+  &--right {
+    @include back();
+    background-image: url(../img/spain.jpg);
+    .row {
+      justify-content: flex-end;
+    }
+  }
+  .body__wrapper {
+    background: rgba(35, 35, 35, 0.9);
+    padding: 44px 32px;
+  }
+  &__subheader,
+  &__header {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  &__subheader {
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+  }
+  &__header {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__info {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+  }
+  &__button {
+    @include but();
+  }
+}
