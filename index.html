@@ -33,12 +33,12 @@
             </button>
           </div>
         </form>
-        <p class="header__scroll">
+        <p class="header__scroll click">
           Scroll Down <br />
           <i class="icon-chevron-down"></i>
         </p>
       </div>
-      <div class="wrapper">
+      <div class="wrapper" id="myNav">
         <div class="container">
           <nav class="header__nav">
             <a href="#" class="header__nav__logo">Bhromaon</a>
@@ -63,7 +63,7 @@
     <section class="why" id="why">
       <div class="container">
         <div class="row row__center">
-          <div class="col-6">
+          <div class="col-12 col-lg-6 order-1 order-lg-0">
             <h2 class="why__header">Why Choose Us</h2>
             <p class="why__info">
               Tion and dislike men who are so beguiled and demoralized by desire
@@ -76,7 +76,7 @@
             </p>
             <button type="button" class="why__button">Explore Places</button>
           </div>
-          <div class="col-5 offset-1">
+          <div class="col-12 col-lg-5 order-2 order-lg-0 offset-0 offset-lg-1">
             <div class="why__images">
               <img src="img/Image 1.jpg" alt="Lake" width="350" height="220" />
               <img
@@ -94,15 +94,15 @@
     <section class="steps" id="steps">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <i class="icon-search"></i>
             <h2 class="steps__header">Search Places</h2>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <i class="icon-check-circle"></i>
             <h2 class="steps__header">Select Places</h2>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-lg-4">
             <i class="icon-thumbs-up"></i>
             <h2 class="steps__header">Book & Enjoy</h2>
           </div>
@@ -112,7 +112,7 @@
     <section class="spain spain--left" id="travel">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="body__wrapper">
               <h6 class="spain__subheader">Spain</h6>
               <h5 class="spain__header">Grand Spain Madrid</h5>
@@ -130,7 +130,7 @@
     <section class="spain spain--right">
       <div class="container">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div class="body__wrapper">
               <h6 class="spain__subheader">Spain</h6>
               <h5 class="spain__header">Grand Spain Madrid</h5>
@@ -188,5 +188,23 @@
         </div>
       </div>
     </footer>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var myNav = document.getElementById("myNav");
+      var sticky = myNav.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          myNav.classList.add("sticky");
+        } else {
+          myNav.classList.remove("sticky");
+        }
+      }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

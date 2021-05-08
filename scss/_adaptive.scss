@@ -8,8 +8,50 @@ $xs: 575.98px;
     background-size: 60%;
   }
 }
+@media screen and (max-width: $lg) {
+  .feedback__img {
+    background-position: left center;
+  }
+}
 
 @media screen and (max-width: $md) {
+  .header {
+    height: 100vh;
+  }
+  .header__nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header .wrapper {
+    min-height: 136px;
+    padding: 32px 0;
+  }
+  .why {
+    margin-top: 136px;
+    text-align: center;
+    padding: 60px 0;
+  }
+  .header__nav__logo {
+    margin-bottom: 32px;
+  }
+  .why__images {
+    margin-bottom: 32px;
+    flex-direction: row;
+    justify-content: space-between;
+    img {
+      width: 48%;
+    }
+  }
+  .why__images img:first-child {
+    margin-bottom: 0;
+  }
+  .steps {
+    background-image: none;
+    padding: 60px 0 0 0;
+  }
+  .steps__header {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: $sm) {

@@ -84,15 +84,14 @@ $blue: #5373fd;
   border: 1px solid transparent;
   cursor: pointer;
   &:hover {
-    background: $white;
-    color: $blue;
-    border-color: $blue;
+    background-size: 85%;
+    background-position-x: 50px;
   }
 }
 * {
   margin: 0;
   padding: 0;
-  transition: all 0.2s ease-in-out;
+  transition: color 0.2s, border 0.2s, background 0.2s;
   box-sizing: border-box;
 }
 body {
@@ -103,6 +102,11 @@ body {
 .header {
   height: 90vh;
   text-align: center;
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
   .container {
     &__header {
       height: 100%;
