@@ -1,1 +1,249 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "MyFont";
+  src: url("../font/MyFont.eot?s18mh3");
+  src: url("../fonts/MyFont.eot?s18mh3#iefix") format("embedded-opentype"), url("../font/MyFont.ttf?s18mh3") format("truetype"), url("../font/MyFont.woff?s18mh3") format("woff"), url("../font/MyFont.svg?s18mh3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "MyFont" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check-circle:before {
+  content: "\e900";
+}
+
+.icon-chevron-down:before {
+  content: "\e901";
+}
+
+.icon-facebook-f:before {
+  content: "\e902";
+}
+
+.icon-linkedin:before {
+  content: "\e903";
+}
+
+.icon-pinterest:before {
+  content: "\e904";
+}
+
+.icon-quote-left:before {
+  content: "\e905";
+}
+
+.icon-search:before {
+  content: "\e906";
+}
+
+.icon-thumbs-up:before {
+  content: "\e907";
+}
+
+.icon-twitter:before {
+  content: "\e908";
+}
+
+.icon-youtube:before {
+  content: "\e909";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Aleo", serif;
+  font-weight: 300;
+  color: #fff;
+}
+
+.header {
+  height: 90vh;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../img/HeaderBackground.jpg);
+}
+
+.header .container__header {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.header__header {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.header__subheader {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.31em;
+  margin-bottom: 48px;
+}
+
+.header__search__search {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #999999;
+  width: 100%;
+  padding: 20px 188px 20px 36px;
+  border: transparent;
+}
+
+.header__search__wrapper {
+  max-width: 647px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__search__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #5373fd;
+  border: transparent solid 1px;
+  padding: 16px 24px;
+  top: 3px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.header__search__button .icon-search {
+  font-size: 15px;
+  margin-right: 12px;
+}
+
+.header__search__button:hover {
+  background: transparent;
+  color: #5373fd;
+  border: #5373fd solid 1px;
+}
+
+.header__scroll {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  position: absolute;
+  bottom: 120px;
+  left: 40%;
+  right: 40%;
+  cursor: pointer;
+}
+
+.header__nav {
+  height: 10vh;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav__logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.header__nav__logo:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.header__menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu__link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__menu__item {
+  border-bottom: 1px solid transparent;
+}
+
+.header__menu__item:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.header__menu__item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header .wrapper {
+  background: #5373fd;
+}
+/*# sourceMappingURL=style.css.map */

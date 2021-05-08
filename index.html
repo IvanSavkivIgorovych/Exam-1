@@ -4,7 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bhromaon</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container container__header">
+        <h1 class="header__header">Bhromaon</h1>
+        <h3 class="header__subheader">Safe Travel Anywhere</h3>
+        <form action="/" method="get" class="header__search">
+          <div class="header__search__wrapper">
+            <input
+              type="search"
+              name="search"
+              class="header__search__search"
+              placeholder="Search Your Travel Destination"
+            />
+            <button type="button" class="header__search__button">
+              <i class="icon-search"></i> Search
+            </button>
+          </div>
+        </form>
+        <p class="header__scroll">
+          Scroll Down <br />
+          <i class="icon-chevron-down"></i>
+        </p>
+      </div>
+      <div class="wrapper">
+        <div class="container">
+          <nav class="header__nav">
+            <a href="#" class="header__nav__logo">Bhromaon</a>
+            <ul class="header__menu">
+              <li class="header__menu__item">
+                <a href="#" class="header__menu__link">Who We Are</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#" class="header__menu__link">What We Do</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#" class="header__menu__link">Travel With Us</a>
+              </li>
+              <li class="header__menu__item">
+                <a href="#" class="header__menu__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>

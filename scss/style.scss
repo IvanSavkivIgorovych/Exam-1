@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("../font/MyFont.eot?s18mh3");
+  src: url("../fonts/MyFont.eot?s18mh3#iefix") format("embedded-opentype"),
+    url("../font/MyFont.ttf?s18mh3") format("truetype"),
+    url("../font/MyFont.woff?s18mh3") format("woff"),
+    url("../font/MyFont.svg?s18mh3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "MyFont" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check-circle:before {
+  content: "\e900";
+}
+.icon-chevron-down:before {
+  content: "\e901";
+}
+.icon-facebook-f:before {
+  content: "\e902";
+}
+.icon-linkedin:before {
+  content: "\e903";
+}
+.icon-pinterest:before {
+  content: "\e904";
+}
+.icon-quote-left:before {
+  content: "\e905";
+}
+.icon-search:before {
+  content: "\e906";
+}
+.icon-thumbs-up:before {
+  content: "\e907";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+.icon-youtube:before {
+  content: "\e909";
+}
+$aleo: "Aleo", serif;
+$josefin: "Josefin Sans", sans-serif;
+$white: #fff;
+$grey: #999999;
+$blue: #5373fd;
+@mixin back {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+body {
+  font-family: $aleo;
+  font-weight: 300;
+  color: $white;
+}
+.header {
+  height: 90vh;
+  text-align: center;
+  .container {
+    &__header {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+  }
+  @include back();
+  background-image: url(../img/HeaderBackground.jpg);
+  &__header {
+    font-family: $josefin;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  &__subheader {
+    font-family: $josefin;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.31em;
+    margin-bottom: 48px;
+  }
+  &__search {
+    &__search {
+      font-family: $josefin;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2em;
+      color: $grey;
+      width: 100%;
+      padding: 20px 188px 20px 36px;
+      border: transparent;
+    }
+    &__wrapper {
+      max-width: 647px;
+      margin: 0 auto;
+      position: relative;
+    }
+    &__button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $white;
+      background: $blue;
+      border: transparent solid 1px;
+      padding: 16px 24px;
+      top: 3px;
+      right: 5px;
+      cursor: pointer;
+      .icon-search {
+        font-size: 15px;
+        margin-right: 12px;
+      }
+      &:hover {
+        background: transparent;
+        color: $blue;
+        border: $blue solid 1px;
+      }
+    }
+  }
+  &__scroll {
+    font-family: $josefin;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    bottom: 120px;
+    left: 40%;
+    right: 40%;
+    cursor: pointer;
+  }
+  &__nav {
+    height: 10vh;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+      font-family: $josefin;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      color: $white;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
+    }
+  }
+  &__menu {
+    list-style: none;
+    display: flex;
+    &__link {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.1em;
+      color: $white;
+      text-decoration: none;
+    }
+    &__item {
+      border-bottom: 1px solid transparent;
+      &:hover {
+        border-bottom: 1px solid $white;
+      }
+      &:not(:first-child) {
+        margin-left: 40px;
+      }
+    }
+  }
+  .wrapper {
+    background: $blue;
+  }
+}
