@@ -250,6 +250,9 @@ body {
 .why {
   margin-top: 10vh;
   padding: 124px 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url(../img/WhyBackground.jpg);
 }
 
@@ -312,5 +315,50 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.steps {
+  background: url(../img/svg/Line.svg) no-repeat center 63px, #333333;
+  text-align: center;
+  padding: 123px 0 59px;
+}
+
+.steps__header {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.steps i {
+  font-size: 64px;
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #333333;
+}
+
+.steps .icon-search {
+  color: #5373fd;
+}
+
+.steps .icon-search:hover {
+  color: #0229ce;
+}
+
+.steps .icon-check-circle {
+  color: #ff6363;
+}
+
+.steps .icon-check-circle:hover {
+  color: #e30000;
+}
+
+.steps .icon-thumbs-up {
+  color: #00a2ff;
+}
+
+.steps .icon-thumbs-up:hover {
+  color: #005180;
 }
 /*# sourceMappingURL=style.css.map */

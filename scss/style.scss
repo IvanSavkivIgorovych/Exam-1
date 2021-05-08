@@ -236,6 +236,7 @@ body {
 .why {
   margin-top: 10vh;
   padding: 124px 0;
+  @include back();
   background-image: url(../img/WhyBackground.jpg);
   &__header {
     @include h2();
@@ -263,5 +264,38 @@ body {
   }
   .row__center {
     align-items: center;
+  }
+}
+.steps {
+  background: url(../img/svg/Line.svg) no-repeat center 63px, #333333;
+  text-align: center;
+  padding: 123px 0 59px;
+  &__header {
+    @include h2();
+  }
+  i {
+    font-size: 64px;
+    display: inline-block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #333333;
+  }
+  .icon-search {
+    color: #5373fd;
+    &:hover {
+      color: darken($color: #5373fd, $amount: 25%);
+    }
+  }
+  .icon-check-circle {
+    color: #ff6363;
+    &:hover {
+      color: darken($color: #ff6363, $amount: 25%);
+    }
+  }
+  .icon-thumbs-up {
+    color: #00a2ff;
+    &:hover {
+      color: darken($color: #00a2ff, $amount: 25%);
+    }
   }
 }
