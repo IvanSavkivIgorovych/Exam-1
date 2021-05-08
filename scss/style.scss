@@ -342,3 +342,75 @@ body {
     @include but();
   }
 }
+.feedback {
+  @include back();
+  background-image: url(../img/BGlast.jpg);
+  padding: 120px 0 180px;
+  .row > * {
+    padding: 0;
+  }
+  &__img {
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+  }
+  &__header {
+    @include h2();
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__subheader {
+    font-family: $josefin;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__info {
+    font-family: $josefin;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+  }
+  body .container &__wrapper {
+    background-color: #333333;
+    padding: 48px 60px;
+  }
+}
+.footer {
+  text-align: center;
+  background-color: #000;
+  padding: 80px 0;
+  font-family: $josefin;
+  &__header {
+    &__link {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: $white;
+    }
+    margin-bottom: 8px;
+  }
+  &__info {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
+  }
+  i {
+    cursor: pointer;
+    font-size: 32px;
+    &:hover {
+      color: $blue;
+    }
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+}
