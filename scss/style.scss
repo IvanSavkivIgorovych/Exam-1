@@ -65,6 +65,30 @@ $blue: #5373fd;
   background-position: center center;
   background-size: cover;
 }
+@mixin h2 {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+@mixin but {
+  min-width: 213px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $white;
+  padding: 20px 32px;
+  background: $blue;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    background: $white;
+    color: $blue;
+    border-color: $blue;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -207,5 +231,37 @@ body {
   }
   .wrapper {
     background: $blue;
+  }
+}
+.why {
+  margin-top: 10vh;
+  padding: 124px 0;
+  background-image: url(../img/WhyBackground.jpg);
+  &__header {
+    @include h2();
+    margin-bottom: 24px;
+  }
+  &__info {
+    font-family: $josefin;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    margin-bottom: 32px;
+  }
+  &__button {
+    @include but();
+  }
+  &__images {
+    display: flex;
+    flex-direction: column;
+    .right {
+      align-self: flex-end;
+    }
+    img:first-child {
+      margin-bottom: 16px;
+    }
+  }
+  .row__center {
+    align-items: center;
   }
 }
