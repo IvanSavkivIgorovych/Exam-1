@@ -598,5 +598,14 @@ body .container .feedback__wrapper .icon-quote-left {
   .steps__header {
     margin-bottom: 60px;
   }
+  .spain {
+    padding-top: 120px;
+  }
+  .feedback {
+    padding: 60px 0 120px;
+  }
+  .feedback__img {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
