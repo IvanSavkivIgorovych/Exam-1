@@ -10,3 +10,8 @@ $(document).ready(function () {
     return false;
   });
 });
+$(document).ready(function () {
+  $("#nav-icon2").click(function () {
+    $(this).toggleClass("open");
+  });
+});
