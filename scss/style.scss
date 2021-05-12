@@ -91,7 +91,7 @@ $blue: #5373fd;
 * {
   margin: 0;
   padding: 0;
-  transition: color 0.2s, border 0.2s, background 0.2s;
+  transition: color 0.2s, border 0.2s, background 0.2s, display 0.2s;
   box-sizing: border-box;
 }
 body {
@@ -427,7 +427,7 @@ body {
 @import "adaptive";
 #nav-icon2 {
   right: 42px;
-  top: 10px;
+  top: 6px;
   width: 60px;
   height: 45px;
   position: absolute;
