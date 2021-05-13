@@ -236,6 +236,8 @@ body {
 }
 .navigation {
   background: $blue;
+  position: sticky;
+  top: 0;
 }
 .why {
   padding: 124px 0;
