@@ -233,12 +233,11 @@ body {
       }
     }
   }
-  .wrapper {
-    background: $blue;
-  }
+}
+.navigation {
+  background: $blue;
 }
 .why {
-  margin-top: 10vh;
   padding: 124px 0;
   @include back();
   background-image: url(../img/WhyBackground.jpg);

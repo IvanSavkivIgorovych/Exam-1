@@ -249,12 +249,11 @@ body {
   margin-left: 40px;
 }
 
-.header .wrapper {
+.navigation {
   background: #5373fd;
 }
 
 .why {
-  margin-top: 10vh;
   padding: 124px 0;
   background-repeat: no-repeat;
   background-position: center center;
@@ -563,12 +562,11 @@ body .container .feedback__wrapper .icon-quote-left {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .header .wrapper {
+  .navigation {
     min-height: 136px;
     padding: 32px 0;
   }
   .why {
-    margin-top: 136px;
     text-align: center;
     padding: 60px 0;
   }
@@ -616,17 +614,15 @@ body .container .feedback__wrapper .icon-quote-left {
   .header__menu.active {
     display: block;
     margin-top: 64px;
+    text-align: center;
   }
   .header__nav__logo {
     margin-bottom: 0;
     margin-top: 18px;
   }
-  .header .wrapper {
+  .navigation {
     min-height: 80px;
     padding: 11px 0;
-  }
-  .why {
-    margin-top: 80px;
   }
   .header__menu {
     -webkit-box-orient: vertical;
