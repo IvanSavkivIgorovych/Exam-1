@@ -71,7 +71,7 @@
     </section>
     <section class="why" id="why">
       <div class="container">
-        <div class="row row__center">
+        <div class="row align-items-center">
           <div class="col-12 col-lg-6 order-1 order-lg-0">
             <h2 class="why__header">Why Choose Us</h2>
             <p class="why__info">
@@ -104,16 +104,22 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-4">
-            <i class="icon-search"></i>
-            <h2 class="steps__header">Search Places</h2>
+            <div class="step">
+              <i class="icon-search"></i>
+              <h2 class="steps__header">Search Places</h2>
+            </div>
           </div>
           <div class="col-12 col-lg-4">
-            <i class="icon-check-circle"></i>
-            <h2 class="steps__header">Select Places</h2>
+            <div class="step">
+              <i class="icon-check-circle"></i>
+              <h2 class="steps__header">Select Places</h2>
+            </div>
           </div>
           <div class="col-12 col-lg-4">
-            <i class="icon-thumbs-up"></i>
-            <h2 class="steps__header">Book & Enjoy</h2>
+            <div class="step">
+              <i class="icon-thumbs-up"></i>
+              <h2 class="steps__header">Book & Enjoy</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -157,7 +163,7 @@
     <section class="feedback">
       <div class="container">
         <h2 class="feedback__header">What Our Tourists Say</h2>
-        <div class="row">
+        <div class="row g-0">
           <div class="col-12 col-lg-4">
             <img
               class="feedback__img"
@@ -188,31 +194,37 @@
           </h3>
           <p class="footer__info">Safe Travel Anywhere</p>
           <div class="footer__socialWrapper">
-            <i class="icon-facebook-f"></i>
-            <i class="icon-twitter"></i>
-            <i class="icon-linkedin"></i>
-            <i class="icon-youtube"></i>
-            <i class="icon-pinterest"></i>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="javascript:void(0);" class="footer__link"
+                  ><i class="icon-facebook-f"></i
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a href="javascript:void(0);" class="footer__link"
+                  ><i class="icon-twitter"></i
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a href="javascript:void(0);" class="footer__link"
+                  ><i class="icon-linkedin"></i
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a href="javascript:void(0);" class="footer__link"
+                  ><i class="icon-youtube"></i
+                ></a>
+              </li>
+              <li class="footer__item">
+                <a href="javascript:void(0);" class="footer__link"
+                  ><i class="icon-pinterest"></i
+                ></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
-    <!-- <script>
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      var myNav = document.getElementById("myNav");
-      var sticky = myNav.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset > sticky) {
-          myNav.classList.add("sticky");
-        } else {
-          myNav.classList.remove("sticky");
-        }
-      }
-    </script> -->
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>

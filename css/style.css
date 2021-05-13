@@ -253,7 +253,7 @@ body {
   background: #5373fd;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: -1px;
 }
 
 .why {
@@ -316,12 +316,6 @@ body {
 
 .why__images img:first-child {
   margin-bottom: 16px;
-}
-
-.why .row__center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .steps {
@@ -450,10 +444,6 @@ body {
   padding: 120px 0 180px;
 }
 
-.feedback .row > * {
-  padding: 0;
-}
-
 .feedback__img {
   height: 100%;
   font-size: 0;
@@ -536,7 +526,21 @@ body .container .feedback__wrapper .icon-quote-left {
   color: #5373fd;
 }
 
-.footer i:not(:last-child) {
+.footer__list {
+  list-style: none;
+}
+
+.footer__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__item:not(:last-child) {
   margin-right: 32px;
 }
 

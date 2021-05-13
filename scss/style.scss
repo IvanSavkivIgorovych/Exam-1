@@ -237,7 +237,7 @@ body {
 .navigation {
   background: $blue;
   position: sticky;
-  top: 0;
+  top: -1px;
 }
 .why {
   padding: 124px 0;
@@ -266,9 +266,6 @@ body {
     img:first-child {
       margin-bottom: 16px;
     }
-  }
-  .row__center {
-    align-items: center;
   }
 }
 .steps {
@@ -351,9 +348,6 @@ body {
   @include back();
   background-image: url(../img/BGlast.jpg);
   padding: 120px 0 180px;
-  .row > * {
-    padding: 0;
-  }
   &__img {
     height: 100%;
     font-size: 0;
@@ -420,6 +414,17 @@ body {
     &:hover {
       color: $blue;
     }
+  }
+  &__list {
+    list-style: none;
+  }
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $white;
+  }
+  &__item {
+    display: inline-block;
     &:not(:last-child) {
       margin-right: 32px;
     }
